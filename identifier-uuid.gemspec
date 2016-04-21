@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'identifier-uuid'
-  s.version = '0.0.1.4'
+  s.version = '0.1.0.0'
   s.summary = 'UUID identifier generator with support for dependency configuration for real and null object implementations'
   s.description = ' '
 
