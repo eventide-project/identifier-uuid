@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.summary = 'UUID identifier generator with support for dependency configuration for real and null object implementations'
   s.description = ' '
 
-  s.authors = ['Obsidian Software, Inc']
-  s.email = 'opensource@obsidianexchange.com'
+  s.authors = ['The Eventide Project']
+  s.email = 'opensource@eventide-project.org'
   s.homepage = 'https://github.com/obsidian-btc/identifier-uuid'
   s.licenses = ['MIT']
 
