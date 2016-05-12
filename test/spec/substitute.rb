@@ -1,6 +1,6 @@
 require_relative 'spec_init'
 
-context Identifier::UUID::Random::Substitute do
+context "Substitute" do
   context "No assigned UUID" do
     uuid = Identifier::UUID::Random::Substitute.build
 

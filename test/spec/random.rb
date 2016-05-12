@@ -1,6 +1,6 @@
 require_relative 'spec_init'
 
-context Identifier::UUID::Random do
+context "Random Identifier" do
   context "Class interface" do
     test "Random UUID" do
       Identifier::UUID::Random.get

@@ -1,6 +1,6 @@
 require_relative 'spec_init'
 
-context Identifier::UUID::Random do
+context "Data Type" do
   context "Getting a UUID" do
     uuid = Identifier::UUID::Random.get
     test "UUIDs are strings" do
