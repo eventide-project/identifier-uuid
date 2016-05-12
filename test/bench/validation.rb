@@ -1,4 +1,4 @@
-require_relative 'spec_init'
+require_relative 'bench_init'
 
 context 'Validating a given UUID' do
   context 'A valid UUID is passed in' do
