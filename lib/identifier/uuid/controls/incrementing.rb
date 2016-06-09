@@ -2,8 +2,8 @@ module Identifier
   module UUID
     module Controls
       module Incrementing
-        def self.example(i=nil, sample: nil)
-          i ||= 1
+        def self.example(i=nil, increment: nil, sample: nil)
+          i ||= increment || 1
           sample ||= false
 
           first_octet = (i).to_s.rjust(8, '0')
