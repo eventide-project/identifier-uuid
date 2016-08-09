@@ -27,4 +27,13 @@ context 'Validating a given UUID' do
       assert(validated == false)
     end
   end
+
+  context 'Blank string is passed in' do
+    test 'Returns false' do
+      identifier = ''
+      validated = Identifier::UUID.uuid?(identifier)
+
+      assert(validated == false)
+    end
+  end
 end

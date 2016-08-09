@@ -9,7 +9,7 @@ module Identifier
     end
 
     def self.uuid?(text)
-      uuid = parse(text).to_s
+      uuid = parse(text)
       uuid == text
     end
 
