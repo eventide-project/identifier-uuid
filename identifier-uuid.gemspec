@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
-  s.name = 'identifier-uuid'
+  s.name = 'evt-identifier-uuid'
   s.version = '0.1.1.1'
   s.summary = 'UUID identifier generator with support for dependency configuration for real and null object implementations'
   s.description = ' '
