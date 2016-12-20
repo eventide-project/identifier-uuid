@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'naught'
 
-  s.add_development_dependency 'test_bench'
+  s.add_development_dependency 'ntl-test_bench'
 end
