@@ -13,7 +13,7 @@ context 'Parsing text to find a valid UUID' do
 
   context 'Text contains a invalid UUID' do
     test 'Returns nil' do
-      identifier = Identifier::UUID::Controls::Invalid.example
+      identifier = Identifier::UUID::Controls::Anomaly.example
       text = "someStream-#{identifier}"
       parsed_uuid = Identifier::UUID.parse(text)
 

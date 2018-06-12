@@ -12,7 +12,7 @@ context 'Validating a given UUID' do
 
   context 'An invalid UUID is passed in' do
     test 'Returns false' do
-      identifier = Identifier::UUID::Controls::Invalid.example
+      identifier = Identifier::UUID::Controls::Anomaly.example
       validated = Identifier::UUID.uuid?(identifier)
 
       assert(validated == false)
