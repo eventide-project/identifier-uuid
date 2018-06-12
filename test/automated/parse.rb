@@ -1,4 +1,4 @@
-require_relative 'bench_init'
+require_relative 'automated_init'
 
 context 'Parsing text to find a valid UUID' do
   context 'Text contains a valid UUID' do
