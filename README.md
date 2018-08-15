@@ -1,22 +1,30 @@
 # identifier_uuid
 
-UUID identifier generator.
+UUID v4 identifier generator with support for generating and parsing UUIDs, and dependency substitution.
+
+More on UUID v4: [https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random))
 
 ## Synopsis
 
 ```ruby
 require 'identifier/uuid'
 
-uuid = Identifier::UUID.random # "df95804e-02fc-490a-a946-e7304942b09e"
+uuid = Identifier::UUID::Random.get
+# => "df95804e-02fc-490a-a946-e7304942b09e"
 
 string = "My UUID v4 is: #{uuid}"
 
-Identifier::UUID.parse(string) # "df95804e-02fc-490a-a946-e7304942b09e"
+Identifier::UUID.parse(string)
+# => "df95804e-02fc-490a-a946-e7304942b09e"
+
+Identifier::UUID.uuid?('df95804e-02fc-490a-a946-e7304942b09e')
+# => true
+
+Identifier::UUID.uuid?('something')
+# => false
 ```
 
-Creates and parses [UUID v4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) strings, for the purpose of being used as identifiers.
-
-### Configure
+## Dependency Configuration
 
 This library was written according to [The Doctrine of Useful Objects](http://docs.eventide-project.org/user-guide/useful-objects.html). As such, it can be configured as either `:identifer` or `:uuid`, and has a useful inert substitute.
 
