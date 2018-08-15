@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.name = 'evt-identifier-uuid'
   s.version = '0.2.0.0'
-  s.summary = 'UUID identifier generator with support for dependency configuration for real and null object implementations'
+  s.summary = 'UUID v4 identifier generator with support for generating and parsing UUIDs, and dependency substitution'
   s.description = ' '
 
   s.authors = ['The Eventide Project']
