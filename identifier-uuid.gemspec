@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'evt-identifier-uuid'
-  s.version = '0.2.0.0'
+  s.version = '0.2.0.1'
   s.summary = 'UUID v4 identifier generator with support for generating and parsing UUIDs, and dependency substitution'
   s.description = ' '
 
