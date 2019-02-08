@@ -30,18 +30,20 @@ module Identifier
       end
 
       module Substitute
-        NullUUID = Naught.build do |config|
-          config.mimic UUID::Random
+        def self.build
+          Random.new
+        end
+
+        class Random < Identifier::UUID::Random
+          def get
+            UUID.zero
+          end
 
           def set(val)
             define_singleton_method(:get) do
               val
             end
           end
-        end
-
-        def self.build
-          NullUUID.new
         end
       end
     end

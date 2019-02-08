@@ -5,8 +5,11 @@ context "Substitute" do
     uuid = Identifier::UUID::Random::Substitute.build
 
     context "UUID" do
-      test "Is nil" do
-        assert(uuid.get.nil?)
+      uuid_val = uuid.get
+      is_uuid = Identifier::UUID.uuid?(uuid_val)
+
+      test "Is a Zero UUID" do
+        assert(uuid_val == Identifier::UUID.zero)
       end
     end
   end
@@ -15,11 +18,11 @@ context "Substitute" do
     uuid = Identifier::UUID::Random::Substitute.build
 
     context "UUID" do
-      test "Is nil" do
-        val = 'some uuid'
-        uuid.set val
+      test "Is the assigned value" do
+        uuid_val = 'some uuid'
+        uuid.set(uuid_val)
 
-        assert(uuid.get == val)
+        assert(uuid.get == uuid_val)
       end
     end
   end
