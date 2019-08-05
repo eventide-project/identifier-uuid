@@ -36,13 +36,11 @@ module Identifier
 
         class Random < Identifier::UUID::Random
           def get
-            UUID.zero
+            @id ||= UUID.zero
           end
 
           def set(val)
-            define_singleton_method(:get) do
-              val
-            end
+            @id = val
           end
         end
       end
