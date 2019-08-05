@@ -35,14 +35,18 @@ module Identifier
         end
 
         class Random < Identifier::UUID::Random
+          attr_writer :id
+
           def get
-            UUID.zero
+            if @id.nil?
+              return UUID.zero
+            end
+
+            @id
           end
 
           def set(val)
-            define_singleton_method(:get) do
-              val
-            end
+            @id = val
           end
         end
       end
