@@ -35,14 +35,8 @@ module Identifier
         end
 
         class Random < Identifier::UUID::Random
-          attr_writer :id
-
           def get
-            if @id.nil?
-              return UUID.zero
-            end
-
-            @id
+            @id ||= UUID.zero
           end
 
           def set(val)
