@@ -16,4 +16,4 @@ require_relative '../init.rb'
 
 require 'identifier/uuid/controls'
 
-require 'test_bench/activate'
+require 'test_bench'; TestBench.activate
