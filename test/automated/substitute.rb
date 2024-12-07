@@ -6,7 +6,6 @@ context "Substitute" do
 
     context "UUID" do
       uuid_val = uuid.get
-      is_uuid = Identifier::UUID.uuid?(uuid_val)
 
       test "Is a Zero UUID" do
         assert(uuid_val == Identifier::UUID.zero)
